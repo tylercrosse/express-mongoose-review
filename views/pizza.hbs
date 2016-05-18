@@ -1,0 +1,10 @@
+<h2>Pizza template (index)</h2>
+<!-- The plain old response to see what we're working with -->
+<p>{{pizzas}}</p>
+
+<!-- because we did .find({}) we got an array -->
+<!-- we use handlebars #each to loop through the array -->
+{{#each pizzas as |pizza index|}}
+  <p>{{pizza.title}}</p>
+  <p>{{pizza.size}}</p>
+{{/each}}
